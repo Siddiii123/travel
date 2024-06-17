@@ -1,0 +1,365 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Font and color setup */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e4eeb5;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #e3e0e0;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #dbaa79;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Main section */
+/* Initial styles for .main */
+.main {
+    background: url('p6.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fading in the main container */
+}
+
+/* Keyframes for fading in */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.mainText {
+    text-align: center;
+    color: #fff;
+}
+
+.mainText h1 {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.mainText button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff9800;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mainText button:hover {
+    background: #e68a00;
+}
+
+/* Book section */
+.book {
+    padding: 20px 0;
+}
+
+.book .head h1 {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    color: #e68a00;
+}
+
+.book .head h1 span {
+    color: #ff9800;
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.booking .form {
+    width: 45%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking .form p {
+    margin-bottom: 5px;
+}
+
+.booking .form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking .form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.booking .form button:hover {
+    background: #55544d;
+}
+
+/* Best places section */
+.best .head h1 {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    color: #504d45;
+}
+
+.best .head h1 span {
+    color: #ff9800;
+}
+
+.pack {
+    width: 100%;
+    padding: 20px;
+    background-image: url('th.jpeg') ;
+    box-shadow: 0 4px 8px rgba(red, rgb(220, 210, 67), blue, alpha);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Header Styles */
+.head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.head h1 {
+    font-size: 2em;
+    color: #b6912c;
+    margin: 0;
+}
+
+.head a {
+    text-decoration: none;
+    color: #ff6347;
+    transition: color 0.3s;
+}
+
+.head a:hover {
+    color: #ff4500;
+}
+
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.PlaceCard {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+}
+
+.PlaceCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(0.9) translateY(20px) rotateY(-10deg);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.PlaceCard img.pop-out {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotateY(0deg);
+}
+}
+.PlaceCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.PlaceCard img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.PlaceCard h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.PlaceCard p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Contact section */
+.connect .head h1 {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    color: #e68a00;
+}
+
+.connect .head h1 span {
+    color: #ff9800;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contactForm {
+    width: 45%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm p {
+    margin-bottom: 5px;
+}
+
+.contactForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contactForm button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contactForm button:hover {
+    background: #555;
+}
+
+/* Footer section */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .text {
+    width: 25%;
+}
+
+.footer .text h3 {
+    margin-bottom: 10px;
+}
+
+.footer .text p {
+    line-height: 1.5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .booking, .contact {
+        flex-direction: column;
+    }
+
+    .booking img, .contact img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .places {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .text {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
